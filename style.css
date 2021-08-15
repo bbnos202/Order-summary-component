@@ -1,0 +1,112 @@
+/*font-family: 'Red Hat Display', sans-serif;*/
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main {
+    width: 375px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.main-image {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.main-div {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-header {
+    text-align: center;
+    font-weight: 900;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: var(--Dark-blue);
+}
+.main-text {
+    text-align: center;
+    font-weight: 400;
+    color: var(--Desaturated-blue);
+    line-height: 25px;
+}
+.price-div {
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+
+}
+.price-image {
+    margin-right: 10px;
+    width: 45px;
+}
+.price-text {
+    color: var(--Dark-blue);
+    line-height: 25px;
+    font-size: 14px;
+}
+.price-text-price {
+    color: var(--Desaturated-blue);
+}
+.price-link {
+    color: var(--Bright-blue);
+    font-weight: 900;
+    font-size: 14px;
+}
+.price-link:hover {
+    color: hsl(245, 50%, 60%);
+    text-decoration: none;
+}
+button {
+    display: block;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.btnProceed {
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    font-weight: 700;
+    box-shadow:  0 6px 4px -4px var(--Bright-blue);
+}
+.btnProceed:hover {
+    background-color: hsl(245, 50%, 60%);
+}
+.btnCancel {
+    color: var(--Desaturated-blue);
+    font-weight: 700;
+    background: none;
+    margin-bottom: 20px;
+}
+.btnCancel:hover {
+    color: var(--Dark-blue);
+}
